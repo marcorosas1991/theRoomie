@@ -32,20 +32,38 @@
               border:solid thick;
               text-align:center;
               }
-            {;} /*blue*/
+            span.docintro{
+              color: rgb(0,0,255);
+              } /*blue*/
             nav {
               color:#00FFFF;
               background-color:#92B865;
               }
-            {font-weight:bold;}
-            {font-size:8pt;margin:24pt; color:#00FF00;} /*green*/
+            .firstsentence{
+              font-weight:bold;
+            }
+            .detail{
+              font-size:8pt;
+              margin:24pt;
+              color:#00FF00;
+              } /*green*/
             footer{color:#000000;} /*black*/
-            .fs2em {font-size:2em;}
+            .fs2em {
+              font-size:2em;
+              }
 
-            .fs24px {font-size:24px;}
-            .fs120prcnt {;}
-            .fs24pt {font-size:24pt;}
-            .fsin {font-size:.5in;}
+            .fs24px {
+              font-size:24px;
+              }
+            .fs120prcnt {
+              font-size: 1.2em;
+            }
+            .fs24pt {
+              font-size:24pt;
+              }
+            .fsin {
+              font-size:.5in;
+              }
             {color:red;font-size:36px;margin-left:50px;}
         </style>
         <!--<link href="../css/week5.css" rel="stylesheet" type="text/css" />-->
@@ -56,8 +74,8 @@
             <h2>(the header section)</h2>
             <h1 class="dropcap">The Rock Market</h1>
             <p>(insert banner image)</p>
-            <p>for all your html coding needs visit <a href="http://the-rock-market.com">the Rock Market</a></p>
-            <p>(tagline) Rock Success is in the <span>Eyes of the Beholder</span></p>
+            <p>for all your html coding needs visit <a class="detail" href="http://the-rock-market.com">the Rock Market</a></p>
+            <p>(tagline) Rock Success is in the <span class="docintro">Eyes of the Beholder</span></p>
 
         </header>
         <br />
@@ -84,7 +102,7 @@
             <br />
 
             <div>
-                <h3>(the middle column)</h3>
+                <h3 class="firstsentence">(the middle column)</h3>
                 <p>do you love to <b>code</b> do you? </p>
                 <h3 style="font-weight:bold;color:#F26F11;font-size:24px;">An image of "The Rock Market" in action showing a love of rocks &amp; a love of life</h3>
             </div>
