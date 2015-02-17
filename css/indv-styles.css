@@ -20,7 +20,7 @@ p {
   text-align: center;
 }
 
-p.footerText {
+footer p {
   padding: 10px;
   font-family: Helvetica;
   color: #FFFFFF;
@@ -68,10 +68,17 @@ nav a:hover {
 footer {
   bottom: 0;
   left: 0;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 60px;
+  clear: both;
   /*background-color: #E0645C;*/
+}
+
+header {
+  /*position: fixed;
+  top: 0;
+  width: 100%;*/
 }
 
 .signUpButton {
@@ -88,10 +95,27 @@ footer {
   margin-top: 10px;
   padding: 7px 10px;
   text-transform: none;
-  transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
-  width: 16.795%; /* auto */
+  /*width: 16.795%; */
+  text-align: center;
+  background-color: #46b98a;
+  margin: 10px;
+}
+
+.searchButton {
+  border: 0 none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial,sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  padding: 7px 10px;
+  text-transform: none;
+  width: 30%; /* auto */
   text-align: center;
   background-color: #46b98a;
   margin: 10px;
@@ -99,11 +123,11 @@ footer {
 
 .searchBar{
   background-color: #E6E6E6;
-  width: 20%;
+  width: 18%;
   height: 100%;
   float:left;
   line-height:30px;
-
+  padding: 1%;
 }
 
 section.main {
@@ -166,6 +190,7 @@ div.anuncio {
 div.anuncio img {
   width: 100%;
 }
+
 div.anuncio a {
   text-decoration: none;
   color: #CCC;
@@ -177,4 +202,23 @@ div.anuncio a {
 
 .mainLogo {
   padding: 10px;
+}
+
+textarea {
+  width: 50%;
+  height: 50px;
+  border: thin gray;
+}
+
+.signUpForm {
+  text-align: left;
+}
+
+.mainRoomPage {
+  width: 60%;
+  float: left;
+}
+
+.mainRoomPage img {
+  width: 100%;
 }

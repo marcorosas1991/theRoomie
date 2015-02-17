@@ -6,7 +6,7 @@
     <meta name="keywords" content="theRoomie,roomie,roommate,rooms for rent, advertise rooms">
 
     <title>theRoomie!</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/indv-styles.css">
 
   </head>
 
@@ -26,57 +26,74 @@
       </nav>
     </header>
 
-    <section class="searchBar" id="searchBar">
+    <div class="wrapper">
+      <section class="searchBar" id="searchBar">
 
-      <h2 class="centerText">Search</h2>
-      <form action="#" method="post">
-        <div class="searchForm">
-          <label>Location:</label>
-          <input type="text" name="location">
-        </div>
-        <div class="searchForm">
-          <label>Price:</label>
-          <input type="text" name="price">
-        </div>
-        <div class="searchForm">
-          <center>
-            <input type="submit" value="search">
-          </center>
-        </div>
+        <h2 class="centerText">Search</h2>
+        <form action="#" method="post">
 
+          <label>What are you searching for?</label>
 
-        <input type="reset" value="Start Over">
-      </form>
+          <div class="searchForm">
 
-    </section>
-
-    <section class="main" id="main">
-      <h1 class="mainWelcome">Welcome to theRoomie!</h1>
-      <p class="centerText">Here you will find your perfect room and roommate!</p>
-      <center>
-        <input type="button" class="signUpButton" value="Sign Up!"></input>
-      </center>
-    </section>
-
-    <aside>
-      <p>Apartments you might like:</p>
-
-        <div class="anuncio">
-          <a href="#">
-            <label>4 ★★★★</label>
-            <img src="img/apart1.jpeg">
-          </a>
-        </div>
+            <input type="radio" name="searchType" value="0" checked>A room and a roomate
+            <br>
+            <input type="radio" name="searchType" value="2">Just a room for me
+            <br>
+            <input type="radio" name="searchType" value="1">A room for me and my roomate
+          </div>
+          <div class="searchForm">
+            <label>Location:</label>
+            <input type="text" name="location">
+          </div>
+          <div class="searchForm">
+            <label>Price:</label>
+            <input type="text" name="price">
+          </div>
+          <div class="searchForm">
+            <center>
+              <input type="submit" value="search" class="searchButton">
+            </center>
+          </div>
 
 
+          <input type="reset" value="Start Over">
+        </form>
 
-        <div class="anuncio">
-          <a href="#">
-            <label>5 ★★★★★</label>
-            <img src="img/apart2.jpg">
-          </a>
-        </div>
-    </aside>
+      </section>
+
+      <section class="main" id="main">
+        <h1 class="mainWelcome">Welcome to theRoomie!</h1>
+        <p class="centerText">Here you will find your perfect room and roommate!</p>
+        <center>
+          <form action="indv-website/signup.html" method="post">
+            <input type="submit" class="signUpButton" value="Sign Up!"></input>
+          </form>
+        </center>
+      </section>
+
+      <aside>
+        <p>Apartments you might like:</p>
+
+          <div class="anuncio">
+            <a href="#">
+              <label>4 ★★★★</label>
+              <img src="img/apart1.jpeg">
+            </a>
+          </div>
+
+
+
+          <div class="anuncio">
+            <a href="indv-website/room.html">
+              <label>5 ★★★★★</label>
+              <img src="img/apart2.jpg">
+            </a>
+          </div>
+      </aside>
+    </div><!-- end of wrapper -->
+
+
 
     <footer class="mainColorTheme">
       <p class="footerText">©Copyright theRoomie.com</p>

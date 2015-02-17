@@ -24,15 +24,38 @@
         |
         <a href="../cit230-links.html">CIT230-links</a>
       </nav>
-      
     </header>
 
     <section class="searchBar" id="searchBar">
 
       <h2 class="centerText">Search</h2>
       <form action="#" method="post">
-        <input type="text" name="searchtext">
-        <input type="submit" value="search">
+
+        <label>What are you searching for?</label>
+
+        <div class="searchForm">
+
+          <input type="radio" name="searchType" value="0" checked>A room and a roomate
+          <br>
+          <input type="radio" name="searchType" value="2">Just a room for me
+          <br>
+          <input type="radio" name="searchType" value="1">A room for me and my roomate
+        </div>
+        <div class="searchForm">
+          <label>Location:</label>
+          <input type="text" name="location">
+        </div>
+        <div class="searchForm">
+          <label>Price:</label>
+          <input type="text" name="price">
+        </div>
+        <div class="searchForm">
+          <center>
+            <input type="submit" value="search" class="searchButton">
+          </center>
+        </div>
+
+
         <input type="reset" value="Start Over">
       </form>
 
@@ -41,10 +64,29 @@
     <section class="main" id="main">
       <h1 class="mainWelcome">Welcome to theRoomie!</h1>
       <p class="centerText">Here you will find your perfect room and roommate!</p>
+      <center>
+        <input type="button" class="signUpButton" value="Sign Up!"></input>
+      </center>
     </section>
 
     <aside>
-      <p>Ads</p>
+      <p>Apartments you might like:</p>
+
+        <div class="anuncio">
+          <a href="#">
+            <label>4 ★★★★</label>
+            <img src="../img/apart1.jpeg">
+          </a>
+        </div>
+
+
+
+        <div class="anuncio">
+          <a href="#">
+            <label>5 ★★★★★</label>
+            <img src="../img/apart2.jpg">
+          </a>
+        </div>
     </aside>
 
     <footer class="mainColorTheme">
