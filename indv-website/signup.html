@@ -33,60 +33,62 @@
     <section class="main" id="main">
       <h1 class="mainWelcome">Sign Up!</h1>
 
-      <form action="#" method="post">
+      <div class ="signupform">
+        <form action="#" method="post">
 
-        <label>Create your account now!</label>
+          <label>Create your account now!</label>
 
-        <div class="signUpForm">
+          <div class="signUpForm">
 
-          <div class="signUpLine">
-            <label>Email:</label>
-            <input type="text" name="name">
+            <div class="signUpLine">
+              <label>Email:</label>
+              <input type="text" name="name">
+            </div>
+
+            <div class="signUpLine">
+              <label>Password:</label>
+              <input type="text" name="name">
+            </div>
+
+            <div class="signUpLine">
+              <label>Name:</label>
+              <input type="text" name="name">
+            </div>
+
+            <div class="signUpLine">
+              <label>Last Name:</label>
+              <input type="text" name="lastname">
+            </div>
+
+            <div class="signUpLine">
+              <label>Gender:</label>
+              <br>
+              <input type="radio" name="searchType" value="0">Male
+              <br>
+              <input type="radio" name="searchType" value="1">Female
+            </div>
+
+            <div class="signUpLine">
+              <label>BirthDay:</label>
+              <input type="text" name="birthday">
+            </div>
+
+            <div class="signUpLine">
+              <label>Telephone:</label>
+              <input type="text" name="phone">
+              <label>(optional)<label>
+            </div>
+
+            <div class="signUpLine">
+              <label>About you:</label>
+              <textarea name="aboutyou"></textarea>
+              <label>(optional)<label>
+            </div>
+
+            <input type="button" class="signUpButton" value="Create your account!"></input>
           </div>
-
-          <div class="signUpLine">
-            <label>Password:</label>
-            <input type="text" name="name">
-          </div>
-
-          <div class="signUpLine">
-            <label>Name:</label>
-            <input type="text" name="name">
-          </div>
-
-          <div class="signUpLine">
-            <label>Last Name:</label>
-            <input type="text" name="lastname">
-          </div>
-
-          <div class="signUpLine">
-            <label>Gender:</label>
-            <br>
-            <input type="radio" name="searchType" value="0">Male
-            <br>
-            <input type="radio" name="searchType" value="1">Female
-          </div>
-
-          <div class="signUpLine">
-            <label>BirthDay:</label>
-            <input type="text" name="birthday">
-          </div>
-
-          <div class="signUpLine">
-            <label>Telephone:</label>
-            <input type="text" name="phone">
-            <label>(optional)<label>
-          </div>
-
-          <div class="signUpLine">
-            <label>About you:</label>
-            <textarea name="aboutyou"></textarea>
-            <label>(optional)<label>
-          </div>
-
-          <input type="button" class="signUpButton" value="Create your account!"></input>
-        </div>
-      </form>
+        </form>
+      </div> <!-- end signupform -->
 
     </section>
 

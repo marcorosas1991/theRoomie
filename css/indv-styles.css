@@ -203,6 +203,16 @@ div.anuncio a {
   padding-right: 5px;
 }
 
+div.signUpForm {
+  width: 60%;
+  /*background-color: #F00;*/
+}
+
+div.signUpLine {
+  float: right;
+  clear: right;
+}
+
 .mainLogo {
   padding: 10px;
 }
