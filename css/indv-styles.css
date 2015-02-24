@@ -31,13 +31,14 @@ footer p {
 
 body {
   /*text-align: center;*/
-  margin: 0;
   padding: 0;
   background: #DEDEDE;
   width: 100%;
 
   font-family: Helvetica;
   margin:0 auto;
+  margin-bottom: 20px;
+
 }
 
 .mainColorTheme {
@@ -64,6 +65,11 @@ nav a:hover {
   color: #8F8F8F;
 }
 
+.sectionMenu a {
+    display: block;
+    /*float: left;*/
+}
+
   /*Main Containers!  */
 footer {
   bottom: 0;
@@ -75,11 +81,6 @@ footer {
   /*background-color: #E0645C;*/
 }
 
-header {
-  /*position: fixed;
-  top: 0;
-  width: 100%;*/
-}
 
 .signUpButton {
   border: 0 none;
@@ -143,7 +144,9 @@ section.main80 {
   width: 80%;
   height: 100%;
   float:left;
+  /*padding: 10px;*/
   /*line-height:30px;*/
+  margin-bottom:100px;
 }
 
 aside {
@@ -221,4 +224,52 @@ textarea {
 
 .mainRoomPage img {
   width: 100%;
+}
+
+/*list*/
+ul {
+  list-style-type: square;
+}
+
+ul a {
+  text-decoration: none;
+  color: #666;
+  font-family: Helvetica, sans-serif;
+}
+
+ul a:hover {
+  text-decoration: none;
+  color: #AAA;
+  font-family: Helvetica, sans-serif;
+}
+
+ol.ScustomerList {
+  list-style-type: upper-roman;
+}
+
+li.ScustomerList {
+  font-style: italic;
+  padding: 3px;
+  width: 90%;
+  background-color: #CCC;
+}
+
+/*table*/
+table {
+  border: 2px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: Helvetica;
+}
+
+th {
+  text-align: left;
+  font-style: italic;
+  background-color: #444;
+  color: white;
+}
+
+tr.alt td {
+    color: #000000;
+    background-color: #CCC;
 }
