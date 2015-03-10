@@ -223,6 +223,10 @@ div.searchForm {
   width: 100%;
 }
 
+.searchForm input[type=submit], input[type=text] {
+  float: right;
+}
+
 div.anuncio {
   width: 100%;
   margin-top: 10px;
@@ -289,7 +293,8 @@ header a {
   color: #46b98a;
 }
 
-.helpingTopicAd a:hover {
+.helpingTopicAd a:hover
+ {
   text-decoration: none;
   font-family: Helvetica, sans-serif;
   color: #B94675;
