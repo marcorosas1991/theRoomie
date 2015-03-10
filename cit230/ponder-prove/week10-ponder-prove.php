@@ -60,7 +60,8 @@
     </head>
     <body>
         <p>Posted last on Wednesday February 08 2012</p>
-        <?php include_once("../modules/header.php"); ?>
+        <?php include_once "../modules/header.php"; ?>
+
 
         <nav>
             <div id="nav">
