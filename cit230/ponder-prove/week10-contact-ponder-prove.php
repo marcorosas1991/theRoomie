@@ -96,7 +96,7 @@ End of message
         <h1>Contact Me</h1>
 
 <?php
-// This displays the errors array if it is not empty, 
+// This displays the errors array if it is not empty,
         // if it is empty this does nothing
         if ($errors) {
             echo '<div>';
@@ -117,23 +117,26 @@ End of message
                 <ul>
                     <li>
                     </li>
-                    <li><label for="txtlName">Last Name:</label>" 
+                    <li><label for="txtlName">Last Name:</label>"
                         <input type="text" name="txtlName" id="txtlName" size="30" /></li>
                     <li><label for="txtEmail">Email: </label>
                         <input type="text" name="txtEmail" id="txtEmail" size="40" /></li>
                     <li><label for="rSubject">Subject of the Message:</label>
                         <input type="text" name="rSubject" id="rSubject" size="50" /></li>
                     <li>Do you like this website?
-                        
-                        
+
+                      <label for="yes">Yes</label>
+                      <input type="radio" name="likeit" id="yes" value="yes" />
+
                         <label for="no">No</label>
                         <input type="radio" name="likeit" id="no" value="No" />
                        	<label for="notsure">Not Sure</label>
-                        <input type="radio" name="likeit" id="notsure" value="Not sure" />  
+                        <input type="radio" name="likeit" id="notsure" value="Not sure" />
                     </li>
                     <li>Select your major:<br>
-						
-                       
+						            <label for="CIT">Computer Information Technology</label>
+                        <input type="Checkbox" name="degree" id="cit"  value="Computer Information Technology">
+
                         <br>
                         <label for="acct">Accounting</label>
                         <input type="checkbox" name="degree" id="acct" value="Accounting" />
@@ -148,9 +151,9 @@ End of message
                         <input type="checkbox" name="degree" id="econ" value="Economics" />
                       </li>
                   <li><label for="how">How did you find us?</label>
-					
+
 					<option value="">--Please Select--</option>
-					
+
                     <option>Yahoo</option>
                     <option>Link from a website</option>
                     <option>Word of mouth</option>
