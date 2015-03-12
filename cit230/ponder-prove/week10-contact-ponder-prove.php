@@ -47,7 +47,7 @@ if($_POST['submit']) {
 
 //If there are no errors stored in the error array proceed to form and then send the email message
 if(!$errors) {
-    $to = '';
+    $to = 'marco.rosas@outlook.com';
     $txtfName = $_POST['txtfName']."\n";
     $txtlName = $_POST['txtlName']."\n";
     $rSubject = $_REQUEST['rSubject'];
