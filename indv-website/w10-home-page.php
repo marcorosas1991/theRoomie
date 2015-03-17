@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="The Roomie is the site where you will find your new Room and Roommates!">
+    <meta name="keywords" content="theRoomie,roomie,roommate,rooms for rent, advertise rooms">
+
+    <title>theRoomie!</title>
+    <link rel="stylesheet" href="../css/indv-styles.css">
+
+  </head>
+
+  <body style="background-image: url('../img/mainBg.gif')">
+
+    <?php include_once "header.php"; ?>
+
+    <div class="wrapper">
+      <section class="searchBar" id="searchBar">
+
+        <h2 class="centerText">Search</h2>
+        <form action="#" method="post">
+
+          <label>What are you searching for?</label>
+
+          <div class="searchForm">
+
+            <input type="radio" name="searchType" value="0" checked><span class="shrinkLetters">A room and a roomate</span>
+            <br>
+            <input type="radio" name="searchType" value="2"><span class="shrinkLetters">Just a room for me</span>
+            <br>
+            <input type="radio" name="searchType" value="1"><span class="shrinkLetters">A room for me and my roomate</span>
+          </div>
+          <div class="searchForm">
+            <label>Location:</label>
+            <input type="text" name="location">
+          </div>
+          <div class="searchForm">
+            <label>Price:</label>
+            <input type="text" name="price">
+          </div>
+          <div class="searchForm" >
+              <input type="submit" value="search" class="searchButton">
+          </div>
+        </form>
+
+      </section>
+
+      <section class="main" id="main">
+        <h1 class="mainWelcome">Welcome to <span class="logoFont">theRoomie</span>!</h1>
+        <p class="centerText">Here you will find your perfect room and roommate!</p>
+          <form class="centerText" action="../indv-website/signup.html" method="post">
+            <input type="submit" class="signUpButton" value="Sign Up!">
+          </form>
+      </section>
+
+      <aside>
+        <p>Apartments you might like:</p>
+
+        <div class="anuncio">
+          <a href="../indv-website/room.html">
+            <span style="color:black">5 ★★★★★</span>
+            <img alt="apartment2" src="../img/apart2.jpg">
+          </a>
+        </div>
+
+        <div class="anuncio">
+          <a href="#">
+            <span style="color:black">4 ★★★★</span>
+            <img alt="apartment1" src="../img/apart1.jpeg">
+          </a>
+        </div>
+
+      </aside>
+    </div><!-- end of wrapper -->
+
+
+
+    <!-- <footer class="mainColorTheme">
+      <p class="footerText">©Copyright theRoomie.com</p>
+    </footer> -->
+
+  </body>
+
+</html>

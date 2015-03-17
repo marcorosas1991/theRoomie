@@ -1,10 +1,11 @@
 <?php
 //Check to see if the form has been submitted, if so use php to validate the inputs
 //This check sees if the btnSubmitMessage key exists in the POST object, if "true" the form has been submitted
-if($_POST['submit']) {
+// Create an empty error array to store any found errors
+$errors = array();
+$successmessage;
 
-    // Create an empty error array to store any found errors
-    $errors = array();
+if(isset($_POST['submit'])) {
 
     //Check the name field using using the empty function
     if(empty($_POST['txtfName'])) {
@@ -45,6 +46,7 @@ if($_POST['submit']) {
 
 
 
+
 //If there are no errors stored in the error array proceed to form and then send the email message
 if(!$errors) {
     $to = 'marco.rosas@outlook.com';
@@ -53,7 +55,7 @@ if(!$errors) {
     $rSubject = $_REQUEST['rSubject'];
     $taMessage = $_POST['taMessage'];
     $txtEmail = $_POST['txtEmail']."\n";
-    $from = 'From:'.$_POST['from'];
+    //$from = 'From:'.$_POST['from'];
     $degree = $_POST['degree'];
     $likeit =$_POST['likeit'];
     $how =$_POST['how'];
@@ -106,7 +108,7 @@ End of message
             }
             echo '</ul>';
             echo '</div>';
-        } elseif($successmessage) {
+        } elseif(isset($successmessage)) {
             echo "<p class=\"warning\">".$successmessage."</p>";
         }
         ?>
@@ -115,9 +117,9 @@ End of message
             <fieldset>
                 <legend>Please Complete All Fields</legend>
                 <ul>
-                    <li>
-                    </li>
-                    <li><label for="txtlName">Last Name:</label>"
+                    <li><label for="txtfName">First Name:</label>
+                        <input type="text" name="txtfName" id="txtfName" size="30" /></li>
+                    <li><label for="txtlName">Last Name:</label>
                         <input type="text" name="txtlName" id="txtlName" size="30" /></li>
                     <li><label for="txtEmail">Email: </label>
                         <input type="text" name="txtEmail" id="txtEmail" size="40" /></li>
@@ -149,20 +151,23 @@ End of message
                         <br>
                         <label for="econ">Economics</label>
                         <input type="checkbox" name="degree" id="econ" value="Economics" />
-                      </li>
-                  <li><label for="how">How did you find us?</label>
-
-					<option value="">--Please Select--</option>
-
-                    <option>Yahoo</option>
-                    <option>Link from a website</option>
-                    <option>Word of mouth</option>
-                    <option>Other</option>
-                </select>
-                </li>
-                    <li><label for="taMessage">Message</label></li>
-                    <li></li>
-                    <li></li>
+                    </li>
+                    <li><label for="how">How did you find us?</label>
+                      <select id="how" name="how">
+    					          <option value="">--Please Select--</option>
+                        <option>Yahoo</option>
+                        <option>Link from a website</option>
+                        <option>Word of mouth</option>
+                        <option>Other</option>
+                      </select>
+                    </li>
+                    <li><label for="taMessage">Message</label>
+                      <textarea name="taMessage" id="taMessage" cols="40" rows="10" onfocus="this.value=''; this.onfocus=null">
+                        Type your message here
+                      </textarea></li>
+                    <li><label for="submit"></label>
+                    <input type="submit" name="submit" value="Send">
+                    </li>
                 </ul>
             </fieldset>
         </form>
