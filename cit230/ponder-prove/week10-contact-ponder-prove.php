@@ -55,7 +55,7 @@ if(!$errors) {
     $rSubject = $_REQUEST['rSubject'];
     $taMessage = $_POST['taMessage'];
     $txtEmail = $_POST['txtEmail']."\n";
-    /ato/$from = 'From:'.$_POST['from'];
+    //$from = 'From:'.$_POST['from'];
     $degree = $_POST['degree'];
     $likeit =$_POST['likeit'];
     $how =$_POST['how'];
