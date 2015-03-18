@@ -129,7 +129,7 @@ End of message
       <section class="main" id="main">
         <form id="frmContact" method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>">
             <fieldset>
-                <legend>Please Complete All Fields</legend>
+                <legend>We are looking forward to hear you!</legend>
                 <ul>
                     <li><label for="txtfName">First Name:</label>
                         <input type="text" name="txtfName" id="txtfName" size="30" /></li>
@@ -180,7 +180,7 @@ End of message
                         Type your message here
                       </textarea></li>
                     <li><label for="submit"></label>
-                    <input type="submit" name="submit" value="Send">
+                    <input class="searchButton" type="submit" name="submit" value="Send">
                     </li>
                 </ul>
             </fieldset>

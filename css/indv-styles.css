@@ -221,7 +221,7 @@ div.searchForm {
   width: 100%;
 }
 
-.searchForm input[type=submit], input[type=text] {
+.searchForm input[type=submit], .searchForm input[type=text] {
   float: right;
 }
 
@@ -350,7 +350,7 @@ label {
   letter-spacing: -1px;
 }
 
-.signupform input, textarea {
+.signupform input, .signupform textarea {
   width: 55%;
   float: right;
   margin-right: 20%;
