@@ -5,7 +5,7 @@
     <meta name="description" content="The Roomie is the site where you will find your new Room and Roommates!">
     <meta name="keywords" content="theRoomie,roomie,roommate,rooms for rent, advertise rooms">
 
-    <title>Sign Up!</title>
+    <title>Welcome to your Account!</title>
     <link rel="stylesheet" href="../css/indv-styles.css">
 
     <script type="text/javascript">
@@ -90,75 +90,25 @@
     </section>
 
     <section class="main" id="main">
-      <h1 class="mainWelcome">Sign Up!</h1>
-      <h3 class="centerText">Create your account now!</h3>
-
-      <div class ="signupform">
-        <form name="signupform" action="welcome.php" method="post" onsubmit="return validateForm()">
-
-          <!-- <div class="signUpForm"> -->
-
-            <div class="signUpLine">
-              <label>Email:</label>
-              <input type="text" name="email">
-            </div>
-
-            <div class="signUpLine">
-              <label>Password:</label>
-              <input type="password" name="password">
-            </div>
-
-            <div class="signUpLine">
-              <label>Name:</label>
-              <input type="text" name="namef">
-            </div>
-
-            <div class="signUpLine">
-              <label>Last Name:</label>
-              <input type="text" name="lastname">
-            </div>
-
-            <div class="signUpLine">
-              <label>Gender:</label>
-              <br>
-              <input type="radio" name="gender" value="0"><label>Male</label>
-              <br>
-              <input type="radio" name="gender" value="1"><label>Female</label>
-            </div>
-
-            <div class="signUpLine">
-              <label>BirthDay:</label>
-              <input type="date" name="birthday">
-            </div>
-
-            <div class="signUpLine">
-              <label>Telephone:</label>
-              <input type="text" name="phone">
-            </div>
-
-            <div class="signUpLine">
-              <label>About you:</label>
-              <textarea name="aboutyou"></textarea>
-            </div>
-
-            <div class="signUpButtonLine">
-              <input type="submit" class="signUpButton" value="Create your account!">
-            </div>
-
-          <!-- </div> -->
-        </form>
-      </div> <!-- end signupform -->
+      <h1 class="mainWelcome">Welcome to the Roomie!</h1>
+      <h3 class="centerText">We are are happy for you <?php echo $_POST["namef"];?>!</h3>
+      <p class="centerText">We have send an email to: <?php echo $_POST["email"];?></p>
 
 
     </section>
 
     <aside>
-      <div class="helpingTopicAd">
-        <a href="#"><h3>Why to create an account?</h3></a>
-      </div>
 
       <div class="helpingTopicAd">
         <a href="#"><h3>What can I do with a Premium Account?</h3></a>
+      </div>
+
+      <div class="helpingTopicAd">
+        <a href="#"><h3>How can I publish Rooms?</h3></a>
+      </div>
+
+      <div class="helpingTopicAd">
+        <a href="#"><h3>How do I get in touch with the landlord?</h3></a>
       </div>
 
     </aside>
