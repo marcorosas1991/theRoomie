@@ -76,7 +76,7 @@ body {
 }
 
 .mainColorTheme {
-  background-color: #46b98a;
+  background-color: #468DB9;
 }
 
 nav.main {
@@ -416,6 +416,10 @@ label {
     line-height:30px;
   }
 
+  section.main80 {
+    width:100%;
+  }
+
   aside {
     background-color: rgba(255,255,255,0.7);
     width: 100%;
@@ -432,7 +436,7 @@ label {
   div.anuncio {
     width: 33.33%;
     margin-top: 10px;
-    float:right;
+    float:left;
   }
 }
 
@@ -454,6 +458,8 @@ label {
     float:left;
     /*line-height:30px;*/
   }
+
+
 
   aside {
     background-color: rgba(255,255,255,0.7);
