@@ -85,11 +85,11 @@
       </nav>
     </header>
 
-    <section class="searchBar" id="searchBar">
+    <section class="searchBar hiddenOnMobile" id="searchBar">
 
     </section>
 
-    <section class="main" id="main">
+    <section class="mainSignUp" id="main">
       <h1 class="mainWelcome">Welcome to the Roomie!</h1>
       <h3 class="centerText">We are are happy for you <?php echo $_POST["namef"];?>!</h3>
       <p class="centerText">We have send an email to: <?php echo $_POST["email"];?></p>

@@ -124,8 +124,6 @@ footer {
   /*background-color: #E0645C;*/
 }
 
-
-
 .signUpButton {
   border: 0 none;
   border-radius: 5px;
@@ -183,8 +181,13 @@ footer {
 section.main {
   background-color: rgba(255,255,255,0.0);
   width: 60%;
-  height: 100%;
   float:left;
+  line-height:30px;
+}
+
+section.mainSignUp {
+  float:left;
+  width: 60%;
   line-height:30px;
 }
 
@@ -416,7 +419,7 @@ label {
     line-height:30px;
   }
 
-  section.main80 {
+  section.main80, section.mainSignUp {
     width:100%;
   }
 
@@ -438,6 +441,10 @@ label {
     margin-top: 10px;
     float:left;
   }
+
+  .hiddenOnMobile {
+    display: none;
+  }
 }
 
 
@@ -458,7 +465,6 @@ label {
     float:left;
     /*line-height:30px;*/
   }
-
 
 
   aside {

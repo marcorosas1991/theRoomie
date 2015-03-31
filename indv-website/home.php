@@ -62,13 +62,13 @@
         <h1 class="mainWelcome"><span class="logoFont">theRoomie</span>!</h1>
         <p class="centerText">Here you will find your perfect room and roommate!</p>
 
-        <form class="centerText" action="indv-website/signup.html">
+        <form class="centerText" action="indv-website/signup.html" method="post">
           <input type="submit" class="signUpButton" value="Sign Up!">
         </form>
 
         <p class="centerText shrinkP">or</p>
 
-        <form class="centerText" action="indv-website/home.php">
+        <form class="centerText" action="indv-website/login.html" method="post">
           <input type="submit" class="signUpButton signInButton" value="Sign In">
         </form>
       </section>
