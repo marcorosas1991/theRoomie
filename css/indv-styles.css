@@ -230,6 +230,22 @@ div.supportTopic {
 
 }
 
+div.resultApartment {
+  /*size*/
+  width:40%;
+  height:auto;
+  /*border*/
+  border:0px;
+  border-radius: 10px;
+
+  float:left;
+  margin:5%;
+  text-decoration: none;
+  color: #000;
+  background-color: rgba(255,255,255,0.7);
+  text-align: center;
+}
+
 div.supportTopic p {
   color: #707070;
 }
@@ -262,11 +278,11 @@ div.anuncio {
   float: left;
 }
 
-div.anuncio img {
+div.anuncio img, div.resultApartment img {
   width: 100%;
 }
 
-div.anuncio a {
+div.anuncio a, div.resultApartment a {
   text-decoration: none;
   color: #CCC;
   text-align: center;
@@ -327,14 +343,13 @@ header a {
   font-family: Helvetica, sans-serif;
 }
 
-.helpingTopicAd a {
+.helpingTopicAd a, a {
   text-decoration: none;
   font-family: Helvetica, sans-serif;
   color: #46b98a;
 }
 
-.helpingTopicAd a:hover
- {
+.helpingTopicAd a:hover, a:hover {
   text-decoration: none;
   font-family: Helvetica, sans-serif;
   color: #B94675;
@@ -474,6 +489,10 @@ label {
     float:left;
     line-height:30px;
     text-align: center;
+  }
+
+  div.resultApartment {
+    width: 90%;
   }
 
   .searchForm input[type=submit], .searchForm input[type=text] {

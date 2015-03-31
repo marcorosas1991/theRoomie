@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="The Roomie is the site where you will find your new Room and Roommates!">
+    <meta name="keywords" content="theRoomie,roomie,roommate,rooms for rent, advertise rooms">
+
+    <title>Sign Up!</title>
+    <link rel="stylesheet" href="../css/indv-styles.css">
+
+    <script type="text/javascript">
+
+      function hi() {
+        alert("hi!");
+        return true;
+      }
+
+      function validateForm() {
+
+      var confirmation = false;
+      var highlightColor = "#FFD3AD";
+
+      //required
+      var emailOk = false;
+      var passwordOk = false;
+      var nameOk = false;
+
+      var mensaje = "You need to complete this fields: \n";
+
+      // email
+      if(document.signupform.address.value != "") {
+        emailOk = true;
+        document.signupform.address.style.background="white";
+      } else {
+        document.signupform.address.style.background=highlightColor;
+        mensaje = mensaje + "\nAddress";
+      }
+
+      // password
+      if(document.signupform.city.value != "") {
+        passwordOk = true;
+        document.signupform.city.style.background="white";
+      } else {
+        document.signupform.city.style.background=highlightColor;
+        mensaje = mensaje + "\nCity";
+      }
+
+      // name
+      if(document.signupform.phone.value != "") {
+        nameOk = true;
+        document.signupform.phone.style.background="white";
+      } else {
+        document.signupform.phone.style.background=highlightColor;
+        mensaje = mensaje + "\nPhone";
+      }
+
+      // If everything is fine.
+      if(emailOk && passwordOk && nameOk) {
+        confirmation = true;
+      } else {
+        window.alert(mensaje);
+      }
+
+      return confirmation;
+    }
+
+  </script>
+
+  </head>
+
+  <body>
+
+
+    <header class="mainColorTheme">
+      <a href="../index.html">
+        <div class="logoframe mainLogoFont">theRoomie</div>
+      </a>
+
+      <nav class="main">
+        <a href="../index.html">Home</a>
+        |
+        <a href="../indv-website/support.html">Support</a>
+        |
+        <a href="../cit230-links.html">CIT230-links</a>
+      </nav>
+    </header>
+
+    <section class="searchBar hiddenOnMobile" id="searchBar">
+
+    </section>
+
+    <section class="mainSignUp" id="main">
+      <h1 class="mainWelcome">Add a room!</h1>
+      <h3 class="centerText">Write the details!</h3>
+
+      <div class ="signupform">
+        <form name="signupform" action="roomadded.html" method="post" onsubmit="return validateForm()">
+
+          <!-- <div class="signUpForm"> -->
+
+            <div class="signUpLine">
+              <label>Address:</label>
+              <input type="text" name="address">
+            </div>
+
+            <div class="signUpLine">
+              <label>Address (cont):</label>
+              <input type="text" name="address2">
+            </div>
+
+            <div class="signUpLine">
+              <label>City:</label>
+              <input type="text" name="city">
+            </div>
+
+            <div class="signUpLine">
+              <label>State:</label>
+              <input type="text" name="state">
+            </div>
+
+            <div class="signUpLine">
+              <label>Telephone:</label>
+              <input type="text" name="phone">
+            </div>
+
+            <div class="signUpLine">
+              <label>Price:</label>
+              <input type="text" name="price">
+            </div>
+
+            <div class="signUpLine">
+              <label>Description:</label>
+              <textarea name="aboutyou"></textarea>
+            </div>
+
+            <div class="signUpButtonLine">
+              <input type="submit" class="signUpButton" value="+Add Room!">
+            </div>
+
+          <!-- </div> -->
+        </form>
+      </div> <!-- end signupform -->
+
+
+    </section>
+
+    <aside>
+      <div class="helpingTopicAd">
+        <a href="#"><h3>Why to create an account?</h3></a>
+      </div>
+
+      <div class="helpingTopicAd">
+        <a href="#"><h3>What can I do with a Premium Account?</h3></a>
+      </div>
+
+    </aside>
+
+  </body>
+
+</html>

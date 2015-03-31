@@ -6,24 +6,23 @@
     <meta name="keywords" content="theRoomie,roomie,roommate,rooms for rent, advertise rooms">
 
     <title>theRoomie!</title>
-    <link rel="stylesheet" href="css/indv-styles.css">
+    <link rel="stylesheet" href="../css/indv-styles.css">
 
   </head>
 
   <body>
-    <?php include_once("analytics/analyticstracking.php") ?>
 
     <header class="mainColorTheme">
-      <a href="index.html">
+      <a href="../index.html">
         <div class="logoframe mainLogoFont">theRoomie</div>
       </a>
 
       <nav class="main">
-        <a href="index.html">Home</a>
+        <a href="../index.html">Home</a>
         |
-        <a href="indv-website/support.html">Support</a>
+        <a href="../indv-website/support.html">Support</a>
         |
-        <a href="cit230-links.html">CIT230-links</a>
+        <a href="../cit230-links.html">CIT230-links</a>
       </nav>
     </header>
 
@@ -31,7 +30,7 @@
       <section class="searchBar" id="searchBar">
 
         <h2 class="centerText">Search</h2>
-        <form action="#" method="post">
+        <form action="results.html" method="post">
 
           <label class="hiddenOnMobile">What are you searching for?</label>
 
@@ -59,48 +58,46 @@
       </section>
 
       <section class="main" id="main">
-        <h1 class="mainWelcome"><span class="logoFont">theRoomie</span>!</h1>
-        <p class="centerText">Here you will find your perfect room and roommate!</p>
+        <h1 class="mainWelcome"><span class="logoFont">Welcome
+        [Your Name]
+        </span>!</h1>
+        <p class="centerText"><-- Start Searching...</p>
 
-        <form class="centerText" action="indv-website/signup.html" method="post">
-          <input type="submit" class="signUpButton" value="Sign Up!">
+        <form class="centerText" action="addroom.html">
+          <label> Add a room:</label><br>
+          <input type="submit" class="signUpButton" value="+">
         </form>
 
-        <p class="centerText shrinkP">or</p>
-
-        <form class="centerText" action="indv-website/login.html" method="post">
-          <input type="submit" class="signUpButton signInButton" value="Sign In">
-        </form>
       </section>
 
       <aside>
         <p>Apartments you might like:</p>
 
         <div class="anuncio">
-          <a href="indv-website/room1.html">
+          <a href="../indv-website/room1.html">
             <span>5 ★★★★★</span>
-            <img alt="apartment2" src="img/apart1.jpg">
+            <img alt="apartment2" src="../img/apart1.jpg">
           </a>
         </div>
 
         <div class="anuncio">
-          <a href="indv-website/room2.html">
+          <a href="../indv-website/room2.html">
             <span>4 ★★★★</span>
-            <img alt="apartment1" src="img/apart2.jpg">
+            <img alt="apartment1" src="../img/apart2.jpg">
           </a>
         </div>
 
         <div class="anuncio">
-          <a href="indv-website/room3.html">
+          <a href="../indv-website/room3.html">
             <span>4 ★★★★</span>
-            <img alt="apartment3" src="img/apart3.jpg">
+            <img alt="apartment3" src="../img/apart3.jpg">
           </a>
         </div>
 
         <div class="anuncio">
-          <a href="indv-website/room4.html">
+          <a href="../indv-website/room4.html">
             <span>5 ★★★★</span>
-            <img alt="apartment4" src="img/apart4.jpg">
+            <img alt="apartment4" src="../img/apart4.jpg">
           </a>
         </div>
 
