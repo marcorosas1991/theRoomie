@@ -61,7 +61,7 @@
         <h1 class="mainWelcome"><span class="logoFont">Welcome
         [Your Name]
         </span>!</h1>
-        <p class="centerText"><-- Start Searching...</p>
+        <p class="centerText">Start Searching on the left side!</p>
 
         <form class="centerText" action="addroom.html">
           <label> Add a room:</label><br>
