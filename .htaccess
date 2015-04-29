@@ -2,7 +2,6 @@ Options -Indexes
 
 RewriteEngine on
 #for production server
-
 RewriteCond %{HTTP_HOST} ^theroomie.com$ [NC,OR]
 #for local dev server
 RewriteCond %{HTTP_HOST} ^localhost$ [NC]
