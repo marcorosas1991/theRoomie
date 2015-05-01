@@ -35,12 +35,12 @@ function printV($var) {
 <html>
   <head>
     <link rel="stylesheet" href="/css/style.css">
-    <meta charset="uft-8">
+    <meta charset="UTF-8">
   </head>
   <body>
 
     <?php
-    
+
     include_once "../../aux/header.php";
 
     echo 'integer: '.$i.'<br>';
