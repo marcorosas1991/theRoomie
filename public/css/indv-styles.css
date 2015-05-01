@@ -16,7 +16,7 @@ h1 {
   color: black;
   text-align: left;
   font-family: Segan_Light, Helvetica, sans-serif;
-  padding: 10px;
+  /*padding: 10px;*/
 }
 
 h1.mainWelcome {
@@ -106,7 +106,7 @@ nav a:hover {
   color: #FFF;
 }
 
-.sectionMenu a {
+.sectionMenu a, .cit336Edivs a {
     display: block;
     /*float: left;*/
 }
@@ -319,7 +319,7 @@ div.mainRoomPage40 {
   width: 38%;
 }
 
-div.CIT230div {
+div.CIT230div, div.cit336Edivs {
   margin: 10px;
 }
 
