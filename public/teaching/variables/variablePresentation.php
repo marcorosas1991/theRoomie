@@ -1,6 +1,4 @@
 <?php
-
-include_once "../../aux/header.php";
 // Six different types of variables
 
 $i = 15; // integer
@@ -37,9 +35,14 @@ function printV($var) {
 <html>
   <head>
     <link rel="stylesheet" href="/css/style.css">
+    <meta charset="uft-8">
   </head>
   <body>
+
     <?php
+    
+    include_once "../../aux/header.php";
+
     echo 'integer: '.$i.'<br>';
     echo 'double: '.$d.'<br>';
     echo 'boolean: '.$b.'<br>';
