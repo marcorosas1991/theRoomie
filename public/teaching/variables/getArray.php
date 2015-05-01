@@ -1,11 +1,9 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <head>
       <link rel="stylesheet" href="/css/style.css">
       <meta charset="UTF-8">
       <title>GET array</title>
-    </head>
   </head>
   <body>
     <?php
