@@ -36,7 +36,7 @@ function printV($var) {
   <head>
     <link rel="stylesheet" href="/css/style.css">
     <meta charset="UTF-8">
-    <title>PHP Variables</tittle>
+    <title>PHP Variables</title>
   </head>
   <body>
 
