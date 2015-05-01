@@ -6,21 +6,21 @@
     <meta name="keywords" content="theRoomie,roomie,roommate,rooms for rent, advertise rooms">
 
     <title>theRoomie!</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
   </head>
 
   <body>
 
     <header class="mainColorTheme">
-      <a href="index.html">
+      <a href="index.php">
         <div class="logoframe mainLogoFont">theRoomie</div>
       </a>
 
       <nav class="main">
-        <a href="index.html">Home</a>
+        <a href="/index.php">Home</a>
         |
-        <a href="indv-website/support.html">Support</a>
+        <a href="/indv-website/support.html">Support</a>
       </nav>
     </header>
 
@@ -78,8 +78,11 @@
 
 
 
-    <footer class="mainColorTheme">
-      <a href="exercises/index.php"><p class="centerText">336 Exercises<p></a>
+    <footer class="mainColorTheme centerText">
+      <a href="exercises/index.php">336 Exercises</a>
+      |
+      <a href="teaching/variables/variablePresentation.php">Variable Presentation</a>
+
     </footer>
 
   </body>
