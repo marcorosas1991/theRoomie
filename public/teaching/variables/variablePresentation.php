@@ -71,7 +71,7 @@ function printV($var) {
     ?>
 
     <br>
-    <a href="getArray.php?name=Marco&surname=Rosas">Get Example</a>
+    <a href="getArray.php?name=Marco&amp;surname=Rosas">Get Example</a>
 
   </body>
 </html>
