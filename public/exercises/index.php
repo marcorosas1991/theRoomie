@@ -1,15 +1,15 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <link rel="stylesheet" href="/css/indv-styles.css">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <div id="exercises" class="cit336Edivs">
       <h1>Exercises</h1>
 
-      <a href="#">Exercise 1-1</a>
-      <a href="#">Exercise 1-2</a>
-      <a href="#">Exercise 1-3</a>
+      Exercise 1-1 -- DONE<br>
+      Exercise 1-2 -- DONE<br>
+      Exercise 1-3 -- DONE<br>
       <a href="#">Exercise 2-1</a>
       <a href="#">Exercise 3-1</a>
       <a href="#">Exercise 4-1</a>

@@ -6,7 +6,7 @@
     <meta name="keywords" content="theRoomie,roomie,roommate,rooms for rent, advertise rooms">
 
     <title>theRoomie!</title>
-    <link rel="stylesheet" href="css/indv-styles.css">
+    <link rel="stylesheet" href="css/style.css">
 
   </head>
 
