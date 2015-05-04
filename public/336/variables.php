@@ -7,13 +7,15 @@
   <body>
 
     <?php
-    $line1 = 'She said, "it\'s Spring."<br>';
-    $line2 = 'He replied, "So?"<br>';
-    $line3 = 'She said, "Thoughts are supposed to turn to love."<br>';
-    $line4 = 'Hesitantly, he responded, "Where is the headed?"<br>';
-    $line5 = 'She looked at him with a flat stare<br>';
+      $line1 = '<p>She said, "it\'s Spring."</p>';
+      $line2 = '<p>He replied, "So?"</p>';
+      $line3 = '<p>She said, "Thoughts are supposed to turn to love."</p>';
+      $line4 = '<p>Hesitantly, he responded, "Where is the headed?"</p>';
+      $line5 = '<p>She looked at him with a flat stare</p>';
 
-    echo "<p>$line1$line2$line3$line4$line5</p>";
+      $text = $line1.$line2.$line3.$line4.$line5;
+
+      echo $text;
     ?>
 
   </body>
