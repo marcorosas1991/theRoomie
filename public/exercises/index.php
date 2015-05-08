@@ -10,7 +10,7 @@
       Exercise 1-1 -- DONE<br>
       Exercise 1-2 -- DONE<br>
       Exercise 1-3 -- DONE<br>
-      <a href="#">Exercise 2-1</a>
+      <a href="/ex_starts/ch02_ex1/index.html">Exercise 2-1</a>
       <a href="#">Exercise 3-1</a>
       <a href="#">Exercise 4-1</a>
       <a href="#">Exercise 5-1</a>
@@ -27,7 +27,7 @@
     <div id="enhancements" class="cit336Edivs">
       <h1>Enhancements</h1>
 
-      <a href="#">Enhancement 2-1</a>
+      <a href="/ex_starts/ch02_ex2/index.php">Enhancement 2-1</a>
       <a href="#">Enhancement 4-1</a>
       <a href="#">Enhancement 5-1</a>
       <a href="#">Enhancement 11-1</a>
