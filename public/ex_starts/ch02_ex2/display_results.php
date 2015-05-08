@@ -9,24 +9,24 @@
 
     // validate investment
     if ($investment === FALSE ) {
-        $error_message = 'Investment must be a valid number.'; 
+        $error_message = 'Investment must be a valid number.';
     } else if ( $investment <= 0 ) {
-        $error_message = 'Investment must be greater than zero.'; 
+        $error_message = 'Investment must be greater than zero.';
     // validate interest rate
     } else if ( $interest_rate === FALSE )  {
-        $error_message = 'Interest rate must be a valid number.'; 
-    } else if ( $interest_rate <= 0 ) {
-        $error_message = 'Interest rate must be greater than zero.'; 
+        $error_message = 'Interest rate must be a valid number.';
+    } else if ( $interest_rate <= 0 || $interest_rate > 15) {
+        $error_message = 'Interest rate must be greater than zero and less or equal to 15.';
     // validate years
     } else if ( $years === FALSE ) {
         $error_message = 'Years must be a valid whole number.';
     } else if ( $years <= 0 ) {
         $error_message = 'Years must be greater than zero.';
-    } else if ( $years > 30 ) {
-        $error_message = 'Years must be less than 31.';
+    } else if ( $years > 50 ) {
+        $error_message = 'Years must be less than or equal to 50.';
     // set error message to empty string if no invalid entries
     } else {
-        $error_message = ''; 
+        $error_message = '';
     }
 
     // if an error message exists, go to the index page
@@ -37,8 +37,8 @@
     // calculate the future value
     $future_value = $investment;
     for ($i = 1; $i <= $years; $i++) {
-        $future_value = 
-            $future_value + ($future_value * $interest_rate * .01); 
+        $future_value =
+            $future_value + ($future_value * $interest_rate * .01);
     }
 
     // apply currency and percent formatting
@@ -67,6 +67,8 @@
 
         <label>Future Value:</label>
         <span><?php echo $future_value_f; ?></span><br>
+        <p>This calculation was done on <?php echo date("m/d/Y"); ?></p>
     </main>
+
 </body>
 </html>
