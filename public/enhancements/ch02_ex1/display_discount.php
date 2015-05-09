@@ -7,18 +7,18 @@
 
   $error_message = '';
   // validate description
-  if (empty($descripcion) == FALSE) {
+  if ($description == '') {
       $error_message .= 'Description must not be empty';
   }
   // validate price
-  if ($price === FALSE ) {
+  if ($price == FALSE ) {
       $error_message .= '<br>Price must be a valid number.';
   } else if ( $price <= 0 ) {
       $error_message .= '<br>Price must be greater than zero.';
   }
 
   // validate discount
-  if ( $discount === FALSE )  {
+  if ( $discount == FALSE )  {
       $error_message .= '<br>Discount must be a valid whole number.';
   } else if ( $discount > 100 || $discount < 0) {
       $error_message .= '<br>Interest rate must be greater than zero and less or equal to 100.';
