@@ -27,7 +27,7 @@
     <div id="enhancements" class="cit336Edivs">
       <h1>Enhancements</h1>
 
-      <a href="/ex_starts/ch02_ex2/index.php">Enhancement 2-1</a>
+      <a href="/enhancements/ch02_ex1/index.php">Enhancement 2-1</a>
       <a href="#">Enhancement 4-1</a>
       <a href="#">Enhancement 5-1</a>
       <a href="#">Enhancement 11-1</a>
