@@ -81,7 +81,7 @@
     <footer class="mainColorTheme centerText">
       <a href="exercises/index.php">336 Exercises</a>
       |
-      <a href="teaching/variables/variablePresentation.php">Variable Presentation</a>
+      <a href="teaching/session-cookies/doc.pdf">Session Cookie Presentation</a>
 
     </footer>
 
