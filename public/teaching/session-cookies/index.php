@@ -20,12 +20,12 @@ This array is stored in the server.</p>
 <h2>How to create/modify a session variable</h2>
 <p>This is the syntax:</p>
 
-  <p>$_SESSION[‘var_name’] = value;</p>
+  <p>$_SESSION['var_name'] = value;</p>
 
 <h2>How to delete a session variable</h2>
 
 <p>a single variable:</p>
-  <p>unset($_SESSION[‘var_name’]);</p>
+  <p>unset($_SESSION['var_name']);</p>
 
     <p>all session variables:</p>
       <p>$_SESSION = array()</p>
@@ -42,13 +42,13 @@ This array is stored in the server.</p>
 <h2>Set a cookie variable</h2>
 <p>setcookie(name, value, expire, path, domain, secure, httponly);</p>
 
-  <p>setcookie(‘myCookie’, ‘Ich bin Marco’, strtotime(‘+1 year’), ‘/’);</p>
+  <p>setcookie('myCookie', 'Ich bin Marco', strtotime('+1 year'), '/');</p>
 
 <h2>Get a cookie variable</h2>
-<p>$var1 = $_COOKIE[‘cookie_name’];</p>
+<p>$var1 = $_COOKIE['cookie_name'];</p>
 
 <h2>Destroy a cookie variable</h2>
-<p>setcookie(‘myCookie’, ‘’, strtotime(‘-1 year’), ‘/’);</p>
+<p>setcookie('myCookie', '', strtotime('-1 year'), '/');</p>
 
   </body>
 </html>
