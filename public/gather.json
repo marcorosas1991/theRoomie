@@ -1,0 +1,39 @@
+{
+  "gatherings": [
+    {
+      "category": 0,
+      "place": "Stadium",
+      "time": "7:30"
+    },
+    {
+      "category": 1,
+      "place": "GYM",
+      "time": "8:30"
+    },
+    {
+      "category": 2,
+      "place": "Little Caesar's",
+      "time": "17:30"
+    },
+    {
+      "category": 3,
+      "place": "Park",
+      "time": "12:30"
+    },
+    {
+      "category": 4,
+      "place": "Cinema",
+      "time": "18:30"
+    },
+    {
+      "category": 5,
+      "place": "Theater",
+      "time": "17:30"
+    },
+    {
+      "category": 6,
+      "place": "Pool",
+      "time": "14:00"
+    }
+  ]
+}
