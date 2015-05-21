@@ -1,5 +1,7 @@
 <?php
-require('database.php');
+require_once('../../../databases.php');
+$db = guitar1link();
+
 $query = 'SELECT *
           FROM categories
           ORDER BY categoryID';
