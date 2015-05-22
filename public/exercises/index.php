@@ -12,7 +12,7 @@
       Exercise 1-3 -- DONE<br>
       <a href="/ex_starts/ch02_ex1/index.html">Exercise 2-1</a>
       <a href="#">Exercise 3-1</a>
-      <a href="/ex_starts/ch04_ex1/index.html">Exercise 4-1</a>
+      <a href="/ex_starts/ch04_ex1/index.php">Exercise 4-1</a>
       <a href="#">Exercise 5-1</a>
       <a href="#">Exercise 6-1</a>
       <a href="#">Exercise 6-2</a>
