@@ -12,7 +12,7 @@
       Exercise 1-3 -- DONE<br>
       <a href="/ex_starts/ch02_ex1/index.html">Exercise 2-1</a>
       <a href="#">Exercise 3-1</a>
-      <a href="#">Exercise 4-1</a>
+      <a href="/ex_starts/ch04_ex1/index.html">Exercise 4-1</a>
       <a href="#">Exercise 5-1</a>
       <a href="#">Exercise 6-1</a>
       <a href="#">Exercise 6-2</a>
@@ -28,7 +28,7 @@
       <h1>Enhancements</h1>
 
       <a href="/enhancements/ch02_ex1/index.php">Enhancement 2-1</a>
-      <a href="#">Enhancement 4-1</a>
+      <a href="/enhancements/ch04_ex1/index.php">Enhancement 4-1</a>
       <a href="#">Enhancement 5-1</a>
       <a href="#">Enhancement 11-1</a>
       <a href="#">Enhancement 13-1</a>
