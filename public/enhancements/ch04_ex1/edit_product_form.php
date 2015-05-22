@@ -39,6 +39,10 @@ if ($product_id != false && $category_id != false) {
     $statement->execute();
     $categories = $statement->fetchAll();
     $statement->closeCursor();
+} else {
+  $error = "Invalid product IDs. Reclick the form.";
+  include('error.php');
+  exit();
 }
 
 ?>
