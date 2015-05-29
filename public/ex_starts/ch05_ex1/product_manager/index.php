@@ -1,5 +1,6 @@
 <?php
-require('../model/database.php');
+require_once('../../../../databases.php');
+$db = guitar1link();
 require('../model/product_db.php');
 require('../model/category_db.php');
 
