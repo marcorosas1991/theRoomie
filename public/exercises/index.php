@@ -14,8 +14,8 @@
       <a href="#">Exercise 3-1</a>
       <a href="/ex_starts/ch04_ex1/index.php">Exercise 4-1</a>
       <a href="/ex_starts/ch05_ex1/index.php">Exercise 5-1</a>
-      <a href="#">Exercise 6-1</a>
-      <a href="#">Exercise 6-2</a>
+      <a href="/ex_starts/ch06_ex1/index.php">Exercise 6-1 DONE</a> 
+      Exercise 6-2 -- DONE<br>
       <a href="#">Exercise 7-2</a>
       <a href="#">Exercise 8-2</a>
       <a href="#">Exercise 11-1</a>
