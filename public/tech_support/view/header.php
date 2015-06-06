@@ -5,6 +5,7 @@
 <head>
     <title>SportsPro Technical Support</title>
     <link rel="stylesheet" type="text/css" href="/tech_support/main.css">
+    <meta charset="UTF-8">
 </head>
 
 <!-- the body section -->
