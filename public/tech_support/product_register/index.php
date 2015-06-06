@@ -45,7 +45,13 @@ if ($action == 'login') {
   $product_id = filter_input(INPUT_POST, 'product_id');
 
   if ($customer_id != NULL && $customer_id != FALSE && $product_id != NULL && $product_id != FALSE) {
-    $count = add_registration($customer_id, $product_id);
+    $result = check_existence($customer_id, $product_id);
+
+    if ($result == NULL) {
+      add_registration($customer_id, $product_id);
+    } else {
+      $message = "User and product already registered.";
+    }
   } else {
     $message = "There was an error registering the product. Try again.";
   }

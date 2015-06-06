@@ -15,4 +15,22 @@ function add_registration($customer_id, $product_code) {
 
   return $count;
 }
+
+function check_existence($customer_id, $product_code) {
+  global $db;
+  $query = 'SELECT customerID
+            FROM registrations
+            WHERE customerID=:customer_id AND productCode=:product_code';
+  $statement = $db->prepare($query);
+  $statement->bindValue(':customer_id', $customer_id);
+  $statement->bindValue(':product_code', $product_code);
+  $statement->execute();
+
+  $result = $statement->fetch();
+  $statement->closeCursor();
+
+  return $result;
+}
+
+
 ?>
