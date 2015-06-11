@@ -30,6 +30,7 @@
       <a href="/enhancements/ch02_ex1/index.php">Enhancement 2-1</a>
       <a href="/enhancements/ch04_ex1/index.php">Enhancement 4-1</a>
       <a href="/enhancements/ch05_ex1/index.php">Enhancement 5-1</a>
+      <a href="/enhancements/ch07_ex2/index.php">Enhancement 7-1</a>
       <a href="#">Enhancement 11-1</a>
       <a href="#">Enhancement 13-1</a>
       <a href="#">Enhancement 12-2</a>
