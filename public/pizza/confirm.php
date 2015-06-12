@@ -20,29 +20,6 @@
     <main>
       <h2>Pizza Order Confirmation</h2>
 
-      <?php
-
-        $toppings = array();
-
-        if (isset($_POST['topping'])) {
-          $toppings = $_POST['topping'];
-        }
-
-        function inArray($array, $str) {
-          if (count($array) > 0) {
-            foreach ($array as $value) {
-              if ($value == $str) {
-                return true;
-              }
-            }
-          }
-          return false;
-        }
-
-        echo inArray($toppings,"nice");
-        echo inArray($toppings,"Mushrooms");
-       ?>
-
       <form action="." method="post">
         <fieldset>
         <label for="size">Size</label>
@@ -51,7 +28,7 @@
         <input type="text" name="meat" id="meat" value="Canadian Bacon" readonly>
         <h3>Toppings - choose as many as you want</h3>
         <label for="cheesetopping">Extra Cheese</label>
-        <input type="checkbox" name="topping[]" id="cheesetopping" value="x-cheese" <?php echo (inArray($toppings,"x-cheese") == true ? "checked":"") ?>>
+        <input type="checkbox" name="topping[]" id="cheesetopping" value="x-cheese" <?php echo ( inArray($toppings,"x-cheese") == true ? "checked":"" )  ?>>
         <label for="mushroomtopping">Mushrooms</label>
         <input type="checkbox" name="topping[]" id="mushroomtopping" value="Mushrooms" <?php echo (inArray($toppings,"Mushrooms") == true ? "checked":"") ?>>
         <label for="pineappletopping">Pineapple</label>
