@@ -10,7 +10,7 @@
     </header>
 
     <main>
-        
+
         <!-- part 1: the errors -->
         <?php if (count($errors) > 0) : ?>
         <h2>Errors:</h2>
@@ -30,7 +30,7 @@
             <?php foreach( $task_list as $id => $task ) : ?>
                 <li><?php echo $id + 1 . '. ' . $task; ?></li>
             <?php endforeach; ?>
-            </ul>           
+            </ul>
         <?php endif; ?>
         <br>
 
