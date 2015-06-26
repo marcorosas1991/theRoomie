@@ -19,7 +19,7 @@
       <a href="/ex_starts/ch07_ex2/">Exercise 7-2</a>
       <a href="/ex_starts/ch08_ex2/">Exercise 8-2</a>
       <a href="/ex_starts/ch11_ex1/">Exercise 11-1</a>
-      <a href="#">Exercise 13-1</a>
+      <a href="/ex_starts/ch13_ex1/">Exercise 13-1</a>
       <a href="#">Exercise 12-2</a>
       <a href="#">Exercise 15-1</a>
     </div>
