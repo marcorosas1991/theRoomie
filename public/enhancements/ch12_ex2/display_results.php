@@ -1,3 +1,9 @@
+<?php
+if (!isset($_SESSION)) {
+	session_start();
+}
+?>
+
 <?php include('views/header.php') ?>
     <main>
         <h1>Future Value Calculator</h1>

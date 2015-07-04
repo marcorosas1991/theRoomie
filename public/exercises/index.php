@@ -33,12 +33,11 @@
       <a href="/enhancements/ch07_ex2/index.php">Enhancement 7-2</a>
       <a href="/enhancements/ch11_ex1/index.php">Enhancement 11-1</a>
       <a href="/enhancements/ch13_ex1/index.php">Enhancement 13-1</a>
-      <a href="#">Enhancement 12-2</a>
+      <a href="/enhancements/ch12_ex2/index.php">Enhancement 12-2</a>
     </div>
 
     <div id="exams" class="cit336Edivs">
       <h1>Exams</h1>
-
       <a href="#">Unit 2 Exam</a>
       <a href="#">Unit 3 Exam</a>
     </div>

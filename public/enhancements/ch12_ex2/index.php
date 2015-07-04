@@ -1,5 +1,13 @@
 <?php
 
+// start session with a persistent cookie of 2 weeks
+$lifetime = 60 * 60 * 24 * 14;
+session_set_cookie_params($lifetime, '/');
+
+if (!isset($_SESSION)) {
+	session_start();
+}
+
 include_once 'functions.php';
 
 $action = filter_input(INPUT_POST, 'action');
@@ -9,7 +17,11 @@ if ($action == NULL) {
 }
 
 if ($action == 'calculationForm') {
-  $years = '5';
+  $investment = isset($_SESSION['investment']) ? $_SESSION['investment'] : '10000';
+  $interest_rate = isset($_SESSION['interest_rate']) ? $_SESSION['interest_rate'] : '4';
+  $years = isset($_SESSION['years']) ? $_SESSION['years'] : '5';
+  $monthly_interest = isset($_SESSION['monthly_interest']) ? $_SESSION['monthly_interest'] : '0';
+
   include('calculationForm.php');
 } elseif ($action == 'displayResults') {
   // get the data from the form
@@ -21,6 +33,11 @@ if ($action == 'calculationForm') {
           FILTER_VALIDATE_INT);
   $monthly_interest = filter_input(INPUT_POST, 'monthlyCompound',
           FILTER_VALIDATE_INT);
+
+  $_SESSION['investment'] = $investment;
+  $_SESSION['interest_rate'] = $interest_rate;
+  $_SESSION['years'] = $years;
+  $_SESSION['monthly_interest'] = $monthly_interest;
 
   // validate investment
   if ($investment === FALSE ) {
@@ -48,8 +65,14 @@ if ($action == 'calculationForm') {
 
   // if an error message exists, go to the index page
   if ($error_message != '') {
-      include('calculationForm.php');
-      exit();
+
+    $investment = isset($_SESSION['investment']) ? $_SESSION['investment'] : '10000';
+    $interest_rate = isset($_SESSION['interest_rate']) ? $_SESSION['interest_rate'] : '4';
+    $years = isset($_SESSION['years']) ? $_SESSION['years'] : '5';
+    $monthly_interest = isset($_SESSION['monthly_interest']) ? $_SESSION['monthly_interest'] : '0';
+
+    include('calculationForm.php');
+    exit();
   } else {
     // calculate the future value
     $monthlyStr = $monthly_interest == 1 ? "YES":"NO";
