@@ -67,9 +67,30 @@ class Validate {
         if ($field->hasError()) { return; }
 
         // Call the pattern method to validate a phone number
-        $pattern = '/^[[:digit:]]{3}-[[:digit:]]{3}-[[:digit:]]{4}$/';
+        $pattern = '/^\d{3}-\d{3}-\d{4}$/';
         $message = 'Invalid phone number.';
         $this->pattern($name, $value, $pattern, $message, $required);
+    }
+
+    public function birthdate($name, $value, $required = true) {
+        $field = $this->fields->getField($name);
+
+        // Call the text method and exit if it yields an error
+        $this->text($name, $value, $required);
+        if ($field->hasError()) { return; }
+
+        // Call the pattern method to validate a date
+        $pattern = '/^(0?[1-9]|1[0-2])\/(0?[1-9]|[12][[:digit:]]|3[01])\/[[:digit:]]{4}$/';
+        $message = 'Invalid date format.';
+        $this->pattern($name, $value, $pattern, $message, $required);
+
+        $birthdate = new \DateTime($value);
+        $now = new \DateTime();
+        if ($birthdate > $now) {
+            $field->setErrorMessage('Birthdate can\'t be in the future.');
+            return;
+        }
+        // $field->clearErrorMessage();
     }
 
     public function email($name, $value, $required = true) {
@@ -146,7 +167,7 @@ class Validate {
             return;
         }
 
-        $this->text($name, $password, $required, 6);
+        $this->text($name, $password, $required, 8);
         if ($field->hasError()) { return; }
 
         // Patterns to validate password
@@ -154,7 +175,7 @@ class Validate {
         $charClasses[] = '[:digit:]';
         $charClasses[] = '[:upper:]';
         $charClasses[] = '[:lower:]';
-        $charClasses[] = '_-';
+        // $charClasses[] = '_-';
 
         $pw = '/^';
         $valid = '[';
@@ -172,7 +193,7 @@ class Validate {
             return;
         } else if ($pwMatch != 1) {
             $field->setErrorMessage(
-                    'Must have one each of upper, lower, digit, and "-_".');
+                    'Must have one each of upper, digit.');
             return;
         }
     }
@@ -211,7 +232,7 @@ class Validate {
         $this->text($name, $value, $required);
         if ($field->hasError()) { return; }
 
-        $pattern = '/^[[:digit:]]{5}(-[[:digit:]]{4})?$/';
+        $pattern = '/^\d{5}(-\d{4})?$/';
         $message = 'Invalid zip code.';
         $this->pattern($name, $value, $pattern, $message, $required);
     }

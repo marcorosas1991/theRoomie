@@ -2,10 +2,10 @@
 require_once('model/fields.php');
 require_once('model/validate.php');
 
-$validate = new Validate();
+$validate = new Register\Validate();
 $fields = $validate->getFields();
 $fields->addField('email', 'Must be a valid email address.');
-$fields->addField('password', 'Must be at least 6 characters.');
+$fields->addField('password', 'Must be at least 8 characters.');
 $fields->addField('verify');
 $fields->addField('first_name');
 $fields->addField('last_name');
@@ -43,7 +43,7 @@ switch ($action) {
         $cardNumber = '';
         $cardDigits = '';
         $expDate = '';
-
+        
         include 'view/register.php';
         break;
     case 'register':
