@@ -30,8 +30,8 @@ switch ($action) {
         break;
     case 'Login':
         // Build the login functionality here
-        $username = filter_input(INPUT_POST, 'username');
-        $password = filter_input(INPUT_POST, 'password');
+        $username = filter_input(INPUT_POST, 'username', FILTER_VALIDATE_EMAIL);
+        $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
 
         if ($username == NULL || $password == NULL) {
           $message = 'Username or Password can not be blank';
@@ -56,7 +56,6 @@ switch ($action) {
             $message = 'Invalid Username or Password';
             include('customer_login.php');
           }
-
         }
 
         break;
