@@ -24,7 +24,7 @@ $log_str = !isset($_SESSION['user_id']) ? 'Login' : 'Logout';
 
       <nav>
         <ul>
-          <li><a href=".">Home</a></li>
+          <li><a href="/tech_support2/.">Home</a></li>
         </ul>
       </nav>
     </header>
