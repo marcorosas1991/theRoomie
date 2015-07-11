@@ -9,6 +9,7 @@ $log_str = !isset($_SESSION['user_id']) ? 'Login' : 'Logout';
   <head>
     <title>SportsPro Technical Support</title>
     <link rel="stylesheet" type="text/css" href="/tech_support2/main.css">
+    <meta charset="utf-8">
   </head>
 
   <!-- the body section -->
