@@ -36,15 +36,16 @@
       <a href="/enhancements/ch12_ex2/index.php">Enhancement 12-2</a>
     </div>
 
-    <div id="exams" class="cit336Edivs">
+    <!-- <div id="exams" class="cit336Edivs">
       <h1>Exams</h1>
       <a href="#">Unit 2 Exam</a>
       <a href="#">Unit 3 Exam</a>
-    </div>
+    </div> -->
 
     <div id="projects" class="cit336Edivs">
       <h1>Projects</h1>
       <a href="#">Project Proposal</a>
+      <a href="#" target="_blank">Project Video</a>      
     </div>
 
 
