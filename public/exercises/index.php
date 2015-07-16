@@ -44,8 +44,9 @@
 
     <div id="projects" class="cit336Edivs">
       <h1>Projects</h1>
-      <a href="#">Project Proposal</a>
-      <a href="#" target="_blank">Project Video</a>      
+      <a href="http://softdev.cf" target="_blank">Project Web Site</a>
+      <a href="../theinquisition/project_proposal.pdf">Project Proposal</a>
+      <a href="#" target="_blank">Project Video</a>
     </div>
 
 

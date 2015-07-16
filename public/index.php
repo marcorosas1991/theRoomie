@@ -79,12 +79,9 @@
 
 
     <footer class="mainColorTheme centerText">
+      <a href="theinquisition/index.php">Final Project</a>
+      |
       <a href="exercises/index.php">336 Exercises</a>
-      |
-      <a href="teaching/session-cookies/index.php">Session Cookie Presentation</a>
-      |
-      <a href="teaching/session-cookies/doc.pdf">Session Cookie Doc</a>
-
     </footer>
 
   </body>
